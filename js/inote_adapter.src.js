@@ -1765,8 +1765,8 @@
             /* Context Menu Dropdown */
             .inote-menu-wrapper { position: relative; display: inline-block; }
             .inote-dropdown-menu {
-                position: absolute; top: 40px; left: 0; background: #28282e; border: 1px solid #383840;
-                border-radius: 12px; min-width: 180px; padding: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+                position: absolute; top: 42px; right: 0; left: auto; background: #28282e; border: 1px solid #383840;
+                border-radius: 12px; min-width: 190px; max-width: calc(100vw - 24px); max-height: 80vh; overflow-y: auto; padding: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.6);
                 display: none; z-index: 10000;
             }
             .inote-dropdown-menu.show { display: block; }
@@ -1912,6 +1912,11 @@
                 .inote-tool-btn {
                     padding: 6px 10px; min-width: 36px; height: 36px; font-size: 16px; gap: 0;
                     background: rgba(255,255,255,0.06); border-radius: 8px;
+                }
+                .inote-dropdown-menu {
+                    right: 0 !important; left: auto !important;
+                    max-width: calc(100vw - 24px) !important;
+                    max-height: 80vh !important; overflow-y: auto !important;
                 }
                 .inote-format-bar {
                     padding: 6px 12px; height: auto !important; min-height: 44px; overflow-x: auto; flex-wrap: wrap; gap: 6px;
