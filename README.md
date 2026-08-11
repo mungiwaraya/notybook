@@ -69,18 +69,7 @@ Notybook contains a built-in **1-Click Encrypted Data Portability Engine**:
 - 📱 **Apple Notes iOS Mobile UI:** 100% mobile-responsive 3-column switcher (`view-sidebar`, `view-notes`, `view-editor`) with smooth iOS slide animations and `‹ Folders` / `‹ Notes` back buttons.
 - 🔒 **Master Password App Lock Screen:** Instant app locking with `🔒 Lock` button and password show/hide toggle (`👁️`).
 
----
 
-## 🚀 How to Run & Deploy
-
-### Local Machine (WAMP / XAMPP / Live Server)
-1. Clone or download project files into your local web root (`C:\wamp64\www\inote\`).
-2. Open browser and navigate to `http://localhost/inote/`.
-
-### 🌐 Deploying to GitHub Pages
-1. Push project files to your GitHub repository.
-2. Go to **Repo Settings -> Pages -> Source -> Branch: main -> Save**.
-3. Your app is live with free HTTPS at `https://yourusername.github.io/Notybook/`!
 
 ---
 
