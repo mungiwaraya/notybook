@@ -1,0 +1,41 @@
+# =====================================================================
+# Notybook Security & URL Protection Configuration (.htaccess)
+# =====================================================================
+
+# 1. Disable Directory Browsing / Indexing (Prevents viewing folder contents via URL)
+Options -Indexes
+
+# 2. Security HTTP Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "same-origin"
+</IfModule>
+
+# 3. Block Access to Sensitive Files (.htaccess, .env, .json, .log, .sql, etc.)
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|json|bak|config)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# 4. URL Rewrite Engine - Protect Direct File Access
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /inote/
+
+    # Prevent direct browser navigation/access to JS files if no local referer
+    RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?localhost [NC]
+    RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?127\.0\.0\.1 [NC]
+    RewriteCond %{REQUEST_URI} \.(js|css)$ [NC]
+    RewriteRule ^(.*)$ index.html [R=302,L]
+
+    # Block direct folder access attempts and redirect to index.html
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^(js|fonts|css)(/.*)?$ index.html [R=302,L]
+</IfModule>

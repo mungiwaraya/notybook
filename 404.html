@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Notybook - Redirecting...</title>
+    <script>
+        // Redirect any direct folder access or 404 attempt back to main Notybook app
+        var path = window.location.pathname;
+        var repoName = path.split('/')[1] || '';
+        var targetUrl = window.location.origin + '/' + repoName + '/index.html';
+        window.location.href = targetUrl;
+    </script>
+</head>
+<body style="background:#1e1e24;color:#ffffff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
+    <div>Redirecting to Notybook...</div>
+</body>
+</html>
