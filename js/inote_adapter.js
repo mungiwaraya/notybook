@@ -1972,9 +1972,10 @@
             /* Editor Pane */
             .inote-editor-pane {
                 flex: 1; background-color: #18181c; display: flex; flex-direction: column;
+                height: 100%; overflow: hidden; position: relative;
             }
             .inote-toolbar {
-                height: 52px; border-bottom: 1px solid #2a2a30; display: flex; align-items: center;
+                height: 52px; min-height: 52px; flex-shrink: 0; border-bottom: 1px solid #2a2a30; display: flex; align-items: center;
                 justify-content: space-between; padding: 0 20px; background-color: #1f1f24;
                 position: relative; z-index: 100;
             }
@@ -1990,8 +1991,9 @@
 
             /* Rich Format Bar */
             .inote-format-bar {
-                height: 46px; background-color: #212126; border-bottom: 1px solid #2a2a30;
-                display: flex; align-items: center; padding: 0 18px; gap: 8px; overflow-x: auto;
+                height: 46px; min-height: 46px; flex-shrink: 0; background-color: #212126; border-bottom: 1px solid #2a2a30;
+                display: flex; align-items: center; padding: 0 18px; gap: 8px; overflow-x: auto; flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch; position: relative; z-index: 99;
             }
             .inote-format-select {
                 background: #28282e; color: #ffffff; border: 1px solid #383840;
@@ -2036,7 +2038,7 @@
 
             /* Content Editable Body */
             .inote-editor-body {
-                flex: 1; padding: 24px 32px; display: flex; flex-direction: column; overflow-y: auto;
+                flex: 1; min-height: 0; padding: 24px 32px; display: flex; flex-direction: column; overflow-y: auto; -webkit-overflow-scrolling: touch;
             }
             .inote-date-display { text-align: center; font-size: 12px; color: #8e8e93; margin-bottom: 16px; font-weight: 500; }
             .inote-title-input {
@@ -2132,6 +2134,7 @@
                 .inote-sidebar, .inote-notes-pane, .inote-editor-pane {
                     position: absolute; top: 0; left: 0; right: 0; bottom: 0;
                     width: 100vw !important; height: 100vh !important; flex-shrink: 0;
+                    display: flex; flex-direction: column; overflow: hidden !important;
                     transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
                 }
 
@@ -2156,10 +2159,11 @@
                 }
                 .mobile-nav-btn:active { background: rgba(229,192,123,0.15); }
 
-                /* Mobile Toolbar Clean Single-Line & No-Overflow Layout */
+                /* Mobile Toolbar Clean Single-Line Fixed Header Layout */
                 .inote-toolbar {
-                    padding: 6px 12px; height: 52px !important; min-height: 52px; overflow: visible; flex-wrap: nowrap !important;
+                    padding: 6px 12px; height: 52px !important; min-height: 52px; flex-shrink: 0; overflow: visible; flex-wrap: nowrap !important;
                     gap: 6px; align-items: center; justify-content: space-between; box-sizing: border-box; width: 100%;
+                    position: sticky; top: 0; z-index: 100; background-color: #1f1f24;
                 }
                 .inote-toolbar-left { flex-wrap: nowrap; gap: 6px; align-items: center; max-width: calc(100vw - 70px); overflow: visible; }
                 .inote-toolbar .btn-text { display: none !important; }
@@ -2183,10 +2187,10 @@
                     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
                 }
                 .inote-format-bar {
-                    padding: 6px 12px; height: auto !important; min-height: 44px; overflow-x: auto; flex-wrap: wrap; gap: 6px;
-                    -webkit-overflow-scrolling: touch;
+                    padding: 6px 12px; height: 46px !important; min-height: 46px; flex-shrink: 0; overflow-x: auto; flex-wrap: nowrap !important; gap: 6px;
+                    -webkit-overflow-scrolling: touch; position: sticky; top: 52px; z-index: 99; background-color: #212126;
                 }
-                .inote-editor-body { padding: 18px 20px; }
+                .inote-editor-body { flex: 1; min-height: 0; padding: 18px 20px; overflow-y: auto !important; -webkit-overflow-scrolling: touch; }
                 .inote-title-input { font-size: 22px; }
 
                 .lock-card { padding: 28px 20px; width: 90%; }
