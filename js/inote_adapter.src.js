@@ -2186,9 +2186,35 @@
                     z-index: 10000;
                     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
                 }
+                /* Mobile Formatting Bar: Clean 2-Row Symmetric Fixed Layout */
                 .inote-format-bar {
-                    padding: 6px 12px; height: 46px !important; min-height: 46px; flex-shrink: 0; overflow-x: auto; flex-wrap: nowrap !important; gap: 6px;
-                    -webkit-overflow-scrolling: touch; position: sticky; top: 52px; z-index: 99; background-color: #212126;
+                    display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+                    justify-content: space-between !important; padding: 8px 12px !important; gap: 8px 6px !important;
+                    height: auto !important; min-height: 90px !important; flex-shrink: 0 !important;
+                    position: sticky !important; top: 52px !important; z-index: 99 !important;
+                    background-color: #212126 !important; border-bottom: 1px solid #2a2a30 !important;
+                    box-sizing: border-box !important; overflow: visible !important;
+                }
+                .inote-format-bar #fmt-heading {
+                    flex: 1 1 calc(50% - 4px) !important; width: calc(50% - 4px) !important;
+                    max-width: calc(50% - 4px) !important; min-width: 0 !important; height: 36px !important;
+                    box-sizing: border-box !important; font-size: 13px !important; padding: 4px 8px !important; margin: 0 !important;
+                }
+                .inote-format-bar #fmt-font {
+                    flex: 1 1 calc(50% - 4px) !important; width: calc(50% - 4px) !important;
+                    max-width: calc(50% - 4px) !important; min-width: 0 !important; height: 36px !important;
+                    box-sizing: border-box !important; font-size: 13px !important; padding: 4px 8px !important; margin: 0 !important;
+                }
+                .inote-format-bar .format-divider:first-of-type { display: none !important; }
+                .inote-format-bar .inote-fmt-btn {
+                    flex: 1 1 auto !important; height: 36px !important; min-width: 32px !important;
+                    max-width: 44px !important; font-size: 14px !important; padding: 0 !important;
+                    justify-content: center !important; align-items: center !important; box-sizing: border-box !important;
+                    border-radius: 8px !important; margin: 0 !important;
+                }
+                .inote-format-bar .format-divider:nth-of-type(2) {
+                    display: block !important; height: 22px !important; width: 1px !important;
+                    background: #383840 !important; margin: 0 2px !important; flex-shrink: 0 !important;
                 }
                 .inote-editor-body { flex: 1; min-height: 0; padding: 18px 20px; overflow-y: auto !important; -webkit-overflow-scrolling: touch; }
                 .inote-title-input { font-size: 22px; }
