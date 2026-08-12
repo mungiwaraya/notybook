@@ -9,23 +9,47 @@
     // Default Sample Data
     var DEFAULT_NOTES = [
         {
-            id: 'note-welcome-1',
+            id: 'note-welcome-guide',
             folderId: 'notes',
-            title: 'Welcome to Notybook',
-            bodyHtml: '<div>Welcome to <b>Notybook</b>!</div><div><br></div><div>This is your modern, fast, and secure offline rich-text note-taking app.</div><div><br></div><div><u>Key Features:</u></div><div><ul><li><b>Rich Formatting</b> (Headings, Bold, Italic, Underline, Fonts)</li><li>Folders &amp; Note Organization</li><li>Trash &amp; Note Restoration</li><li>Offline LocalStorage Auto-saving</li></ul></div>',
-            body: 'Welcome to Notybook!\n\nThis is your modern, fast, and secure offline rich-text note-taking app.\n\nKey Features:\n- Rich Formatting (Headings, Bold, Italic, Underline, Fonts)\n- Folders & Note Organization\n- Trash & Note Restoration\n- Offline LocalStorage Auto-saving',
-            snippet: 'Welcome to Notybook! This is your modern, fast, and secure offline rich-text note-taking app...',
+            title: '🚀 Welcome to Notybook - Feature Showcase',
+            fontFamily: 'Lemon Milk',
+            bodyHtml: '<h1>🚀 Welcome to Notybook!</h1><div>Your modern, ultra-fast, and secure offline rich-text note taking application.</div><div><br></div><h2>✨ 1. Rich Text Formatting &amp; Typography</h2><div>Explore powerful formatting options directly from the toolbar above:</div><ul><li><b>Bold Text (Ctrl+B):</b> Highlight important key points with strong emphasis.</li><li><i>Italic Text (Ctrl+I):</i> Add stylish cursive emphasis to your thoughts.</li><li><u>Underline Text (Ctrl+U):</u> Underline critical action items.</li><li><s>Strikethrough:</s> Mark completed tasks or outdated ideas.</li></ul><div><br></div><h2>🔤 2. 12 Custom Font Styles</h2><div>Switch fonts instantly from the <b>Font Selector</b> dropdown above:</div><ul><li><b>⚡ Roboto:</b> Clean, high-legibility modern sans-serif.</li><li><b>🌊 Coolvetica:</b> Smooth geometric display font.</li><li><b>🍋 Lemon Milk:</b> Bold uppercase aesthetic styling.</li><li><b>🔥 Bebas Notes:</b> Tall impact display typeface.</li><li><b>🎀 KG Miss Steward &amp; 📝 Papernotes:</b> Creative handwriting styles.</li></ul><div><br></div><h2>📌 3. Quick Action Bar</h2><div>Use the top toolbar to <b>Pin</b> crucial notes, <b>Move</b> to custom folders, <b>Backup</b> your data, or <b>Lock</b> your session in 1-click!</div>',
+            body: '🚀 Welcome to Notybook!\nYour modern, ultra-fast, and secure offline rich-text note taking application.\n\n✨ 1. Rich Text Formatting & Typography\nExplore powerful formatting options directly from the toolbar above:\n- Bold Text (Ctrl+B): Highlight important key points.\n- Italic Text (Ctrl+I): Add stylish cursive emphasis.\n- Underline Text (Ctrl+U): Underline critical action items.\n- Strikethrough: Mark completed tasks.\n\n🔤 2. 12 Custom Font Styles\n- Roboto: Clean modern sans-serif.\n- Coolvetica: Smooth geometric font.\n- Lemon Milk: Bold uppercase aesthetic.\n- Bebas Notes: Tall impact typeface.\n- Papernotes & KG Miss Steward: Handwriting fonts.\n\n📌 3. Quick Action Bar\nUse the top toolbar to Pin crucial notes, Move to custom folders, Backup your data, or Lock your session in 1-click!',
+            snippet: 'Welcome to Notybook! Your modern, ultra-fast, and secure offline rich-text note taking app...',
             updatedAt: new Date().toISOString(),
             pinned: true
         },
         {
-            id: 'note-quick-ideas',
-            folderId: 'notes',
-            title: 'Daily Ideas & Tasks',
-            bodyHtml: '<h2>Daily Ideas</h2><div><ul><li>Review project features and styling</li><li>Test custom font &amp; background color pickers</li><li>Organize notes into custom folders</li></ul></div>',
-            body: 'Daily Ideas\n- Review project features and styling\n- Test custom font & background color pickers\n- Organize notes into custom folders',
-            snippet: 'Daily Ideas: Review project features and styling...',
+            id: 'note-security-guide',
+            folderId: 'quick',
+            title: '🔒 Security, Lock Screen & Master Password',
+            fontFamily: 'Roboto',
+            bodyHtml: '<h1>🔒 Security &amp; Encryption Engine</h1><div>Notybook is built with zero-trust privacy and bank-grade encryption algorithms.</div><div><br></div><h2>🛡️ Zero-Cloud Privacy</h2><div><ul><li><b>100% LocalStorage:</b> Your notes never touch an external server or third-party API.</li><li><b>AES-256-GCM:</b> Notes and folders are encrypted before being saved to browser storage.</li><li><b>PBKDF2 Key Derivation:</b> Derived using 100,000 hashing iterations + SHA-256.</li></ul></div><div><br></div><h2>🔑 Changing Your Master Password</h2><div>You can update your security password anytime:</div><ol><li>Click the <b>🔑 Password</b> button in the toolbar or options menu (<code>•••</code>).</li><li>Enter your <b>Previous Password</b> to verify ownership.</li><li>Enter your <b>New Password</b> and <b>Confirm New Password</b>.</li><li>Click <b>Update Password</b> — all notes and folders will automatically re-encrypt seamlessly!</li></ol><div><br></div><h2>📦 Encrypted Backup &amp; Restore</h2><div>Click <b>Backup Notes</b> to download an encrypted <code>.json</code> backup file. Restore it anytime on any device with 1-click!</div>',
+            body: '🔒 Security & Encryption Engine\nNotybook is built with zero-trust privacy and bank-grade encryption algorithms.\n\n🛡️ Zero-Cloud Privacy:\n- 100% LocalStorage: Your notes never touch an external server.\n- AES-256-GCM: Notes and folders are encrypted before storage.\n- PBKDF2 Key Derivation: 100,000 iterations + SHA-256.\n\n🔑 Changing Your Master Password:\n1. Click 🔑 Password button in toolbar or menu.\n2. Enter Previous Password to verify.\n3. Enter New Password & Confirm New Password.\n4. Click Update Password — data re-encrypts instantly!\n\n📦 Encrypted Backup & Restore:\nDownload encrypted .json backup and restore anytime.',
+            snippet: 'Security & Encryption Engine: Zero-cloud privacy with AES-256 encryption & PBKDF2 key derivation...',
+            updatedAt: new Date(Date.now() - 1800000).toISOString(),
+            pinned: true
+        },
+        {
+            id: 'note-organization-ui',
+            folderId: 'work',
+            title: '📱 Folders, Search & Apple Notes UI',
+            fontFamily: 'Coolvetica',
+            bodyHtml: '<h1>📱 Apple Notes Responsive UI</h1><div>Notybook brings the elegant macOS &amp; iOS 3-column experience to your browser:</div><div><br></div><h2>📁 Folder Management &amp; Icon Picker</h2><div><ul><li>Click the <b>+</b> button on the sidebar to create custom folders.</li><li>Choose from <b>12 Vector Ionicons</b> (📁 Work, ⚡ Quick, 👤 Personal, 💡 Ideas, 📚 Study, 🎨 Design, 🚀 Projects, ⭐ Favorites).</li><li>Organize notes into dedicated topics effortlessly.</li></ul></div><div><br></div><h2>🔍 Instant Search &amp; Filtering</h2><div>Type key terms into the search bar (<code>Search notes...</code>) to instantly filter titles and note contents in real-time.</div><div><br></div><h2>📱 Mobile Navigation</h2><div>On mobile screens, smoothly slide between <b>Folders</b>, <b>Notes List</b>, and <b>Editor</b> using top iOS navigation buttons (<code>‹ Folders</code> / <code>‹ Notes</code>).</div>',
+            body: '📱 Apple Notes Responsive UI\nNotybook brings the elegant macOS & iOS 3-column experience to your browser:\n\n📁 Folder Management & Icon Picker:\n- Click + to create custom folders.\n- Choose from 12 Vector Ionicons.\n- Organize notes into dedicated topics.\n\n🔍 Instant Search & Filtering:\nSearch titles and contents in real-time.\n\n📱 Mobile Navigation:\nSmoothly slide between Folders, Notes List, and Editor on mobile devices.',
+            snippet: 'Apple Notes Responsive UI: 3-column layout, custom vector folder icons, and real-time search...',
             updatedAt: new Date(Date.now() - 3600000).toISOString(),
+            pinned: false
+        },
+        {
+            id: 'note-pro-shortcuts',
+            folderId: 'personal',
+            title: '⚡ Pro Tips & Keyboard Shortcuts',
+            fontFamily: 'Roboto',
+            bodyHtml: '<h1>⚡ Pro Shortcuts &amp; Power Tools</h1><div>Master Notybook with these handy shortcuts and hidden menu features:</div><div><br></div><h2>⌨️ Keyboard Shortcuts</h2><div><ul><li><code>Ctrl + B</code> — Bold highlighted text</li><li><code>Ctrl + I</code> — Italicize highlighted text</li><li><code>Ctrl + U</code> — Underline highlighted text</li><li><code>Enter</code> — Submit modals &amp; password lock inputs</li><li><code>Esc</code> — Cancel modals &amp; close menus</li></ul></div><div><br></div><h2>📊 More Options Menu (•••)</h2><div>Click the three dots <b>•••</b> in the top right to access:</div><ul><li><b>Word Stats:</b> View live character &amp; word count for your note.</li><li><b>Copy Text:</b> Copy formatted plain text to clipboard.</li><li><b>Duplicate Note:</b> Instantly clone the active note.</li><li><b>Clear Content:</b> Reset note body with 1-click.</li><li><b>Delete Note:</b> Safely move note to Trash.</li></ul>',
+            body: '⚡ Pro Shortcuts & Power Tools\nMaster Notybook with these handy shortcuts and hidden menu features:\n\n⌨️ Keyboard Shortcuts:\n- Ctrl+B: Bold text\n- Ctrl+I: Italicize text\n- Ctrl+U: Underline text\n- Enter: Submit modals\n- Esc: Close modals\n\n📊 More Options Menu (•••):\n- Word Stats: Character & word counter.\n- Copy Text: Copy to clipboard.\n- Duplicate Note: Clone active note.\n- Clear Content / Delete Note.',
+            snippet: 'Pro Shortcuts & Power Tools: Keyboard shortcuts (Ctrl+B, Ctrl+I, Ctrl+U), Word Stats, Copying & Cloning...',
+            updatedAt: new Date(Date.now() - 7200000).toISOString(),
             pinned: false
         }
     ];
@@ -62,6 +86,7 @@
         'color-palette-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"><path d="M430.11 347.9c-20.2 0-38.3 12.1-46.7 30.9a51.68 51.68 0 01-47.5 30.2H256a160 160 0 11160-160c0 23.8 17.5 43.8 41.2 45.7 13.9 1.1 26.8 10.3 26.8 24.3a28.8 28.8 0 01-28.8 28.9z"/><circle cx="144" cy="208" r="16"/><circle cx="208" cy="144" r="16"/><circle cx="304" cy="144" r="16"/><circle cx="368" cy="208" r="16"/></svg>',
         'rocket-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"><path d="M256 464c-16 0-32-16-32-32l16-80-64-64-80 16c-16 0-32-16-32-32 0-80 144-224 224-224s224 144 224 224c0 16-16 32-32 32l-80-16-64 64 16 80c0 16-16 32-32 32z"/><circle cx="256" cy="192" r="32"/></svg>',
         'star-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"><path d="M480 208H308L256 48l-52 160H32l136 104-52 160 140-100 140 100-52-160z"/></svg>',
+        'key-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"><path d="M210.81 261.73L320 152.57l31.43 31.43L374.29 161l-22.86-22.86L384 105.71l-31.43-31.42L220.86 206l-10.05-10a112 112 0 1017.3 73.12zM144 384a48 48 0 1148-48 48 48 0 01-48 48z"/></svg>',
         'lock-closed-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"><path d="M336 208v-96a80 80 0 00-160 0v96"/><rect x="96" y="208" width="320" height="272" rx="48" ry="48"/></svg>',
         'heart-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"><path d="M352 48c-48 0-88 32-96 64-8-32-48-64-96-64-61.86 0-112 50.14-112 112 0 128 208 304 208 304s208-176 208-304c0-61.86-50.14-112-112-112z"/></svg>',
         'home-outline': '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"><path d="M80 212v236a16 16 0 0016 16h120V320h80v144h120a16 16 0 0016-16V212M32 256L256 48l224 208"/></svg>',
@@ -354,6 +379,7 @@
                             <button class="inote-tool-btn" id="btn-delete-note" title="Delete Note">${getIconSvg('trash-outline')} <span class="btn-text">Delete</span></button>
                             <button class="inote-tool-btn" id="btn-backup-data" title="Backup Notes">${getIconSvg('download-outline')} <span class="btn-text">Backup</span></button>
                             <button class="inote-tool-btn" id="btn-restore-data" title="Restore Backup">${getIconSvg('cloud-upload-outline')} <span class="btn-text">Restore</span></button>
+                            <button class="inote-tool-btn" id="btn-change-password" title="Change Password">${getIconSvg('key-outline')} <span class="btn-text">Password</span></button>
                             <button class="inote-tool-btn" id="btn-lock-app" title="Lock App">${getIconSvg('lock-closed-outline')} <span class="btn-text">Lock</span></button>
                             <div class="inote-menu-wrapper">
                                 <button class="inote-tool-btn" id="btn-more-options" title="More Options">${getIconSvg('ellipsis-horizontal-outline')}</button>
@@ -367,6 +393,7 @@
                                     <div class="menu-divider"></div>
                                     <div class="menu-item" id="menu-backup-data">${getIconSvg('download-outline')} Backup Data</div>
                                     <div class="menu-item" id="menu-restore-data">${getIconSvg('cloud-upload-outline')} Restore Backup</div>
+                                    <div class="menu-item" id="menu-change-password">${getIconSvg('key-outline')} Change Password</div>
                                     <div class="menu-item" id="menu-lock-app">${getIconSvg('lock-closed-outline')} Lock App</div>
                                     <div class="menu-divider"></div>
                                     <div class="menu-item" id="menu-clear-note">${getIconSvg('sparkles-outline')} Clear Content</div>
@@ -1100,6 +1127,7 @@
                 else if (menuId === 'menu-stats') showNoteStats();
                 else if (menuId === 'menu-backup-data') exportBackupFile();
                 else if (menuId === 'menu-restore-data') triggerRestoreBackup();
+                else if (menuId === 'menu-change-password') renderChangePasswordModal();
                 else if (menuId === 'menu-lock-app') lockApp();
                 else if (menuId === 'menu-clear-note') clearActiveNoteContent();
                 else if (menuId === 'menu-delete-note') deleteActiveNote();
@@ -1113,6 +1141,10 @@
             }
             if (e.target.closest('#btn-restore-data') || e.target.closest('#menu-restore-data')) {
                 triggerRestoreBackup();
+                return;
+            }
+            if (e.target.closest('#btn-change-password') || e.target.closest('#menu-change-password')) {
+                renderChangePasswordModal();
                 return;
             }
             if (e.target.closest('#btn-lock-app') || e.target.closest('#menu-lock-app')) {
@@ -1220,6 +1252,21 @@
             if ((e.ctrlKey || e.metaKey) && e.key === 'i') { e.preventDefault(); formatText('italic'); }
             if ((e.ctrlKey || e.metaKey) && e.key === 'u') { e.preventDefault(); formatText('underline'); }
         });
+
+        // Active Selection / Format Toolbar State Syncing
+        document.addEventListener('selectionchange', function() {
+            updateFormatToolbarState();
+        });
+        document.addEventListener('keyup', function(e) {
+            if (e.target && e.target.id === 'note-content-editor') {
+                updateFormatToolbarState();
+            }
+        });
+        document.addEventListener('mouseup', function(e) {
+            if (e.target && e.target.closest('#note-content-editor')) {
+                updateFormatToolbarState();
+            }
+        });
     }
 
     function closeAllPopovers() {
@@ -1245,6 +1292,7 @@
         }
         document.execCommand(cmd, false, value || null);
         onNoteContentChange();
+        updateFormatToolbarState();
     }
 
     // Custom heading applier — directly replaces the block element in DOM.
@@ -1293,6 +1341,63 @@
         sel.addRange(newRange);
 
         onNoteContentChange();
+        updateFormatToolbarState();
+    }
+
+    function updateFormatToolbarState() {
+        var editor = document.getElementById('note-content-editor');
+        if (!editor) return;
+
+        var sel = window.getSelection();
+        if (!sel || sel.rangeCount === 0) return;
+
+        var anchor = sel.anchorNode;
+        if (!anchor) return;
+        var node = anchor.nodeType === 3 ? anchor.parentNode : anchor;
+        if (!editor.contains(node)) return;
+
+        var btnBold = document.getElementById('fmt-bold');
+        var btnItalic = document.getElementById('fmt-italic');
+        var btnUnderline = document.getElementById('fmt-underline');
+        var btnStrike = document.getElementById('fmt-strike');
+        var btnListBullet = document.getElementById('fmt-list-bullet');
+        var btnListNumber = document.getElementById('fmt-list-number');
+
+        try {
+            var isBold = document.queryCommandState('bold');
+            var isItalic = document.queryCommandState('italic');
+            var isUnderline = document.queryCommandState('underline');
+            var isStrike = document.queryCommandState('strikeThrough');
+            var isBullet = document.queryCommandState('insertUnorderedList');
+            var isNumber = document.queryCommandState('insertOrderedList');
+
+            if (btnBold) btnBold.classList.toggle('active', !!isBold);
+            if (btnItalic) btnItalic.classList.toggle('active', !!isItalic);
+            if (btnUnderline) btnUnderline.classList.toggle('active', !!isUnderline);
+            if (btnStrike) btnStrike.classList.toggle('active', !!isStrike);
+            if (btnListBullet) btnListBullet.classList.toggle('active', !!isBullet);
+            if (btnListNumber) btnListNumber.classList.toggle('active', !!isNumber);
+        } catch(e) {}
+
+        var headingSelect = document.getElementById('fmt-heading');
+        if (headingSelect) {
+            var currBlock = node;
+            var headingTag = 'p';
+            while (currBlock && currBlock !== editor && currBlock.parentNode !== editor) {
+                currBlock = currBlock.parentNode;
+            }
+            if (currBlock && currBlock !== editor) {
+                var tagName = currBlock.tagName ? currBlock.tagName.toLowerCase() : 'p';
+                if (tagName === 'h1' || tagName === 'h2' || tagName === 'h3') {
+                    headingTag = tagName;
+                } else {
+                    headingTag = 'p';
+                }
+            }
+            if (document.activeElement !== headingSelect) {
+                headingSelect.value = headingTag;
+            }
+        }
     }
 
     // Lock Screen & Backup Implementation
@@ -1491,6 +1596,154 @@
         };
         reader.readAsText(file);
         e.target.value = '';
+    }
+
+    function renderChangePasswordModal() {
+        var authRaw = localStorage.getItem('notybook_sec_auth');
+        if (!authRaw) {
+            showToast('⚠️ Master Password is not set yet.');
+            return;
+        }
+
+        var existingModal = document.getElementById('notybook-change-pass-screen');
+        if (existingModal) existingModal.remove();
+
+        var overlay = document.createElement('div');
+        overlay.className = 'notybook-lock-overlay show';
+        overlay.id = 'notybook-change-pass-screen';
+        overlay.innerHTML = `
+            <div class="lock-card" id="change-pass-card-box">
+                <div class="lock-icon-hero">🔑</div>
+                <h2>Change Password</h2>
+                <p>Enter your previous password and set a new master password.</p>
+                
+                <div class="lock-input-group">
+                    <input type="password" id="change-pass-current" placeholder="Previous Password" autofocus />
+                    <button class="toggle-pass-btn" id="btn-toggle-cp-curr" type="button" title="Show/Hide">👁️</button>
+                </div>
+
+                <div class="lock-input-group" style="margin-top: 10px;">
+                    <input type="password" id="change-pass-new" placeholder="New Password" />
+                    <button class="toggle-pass-btn" id="btn-toggle-cp-new" type="button" title="Show/Hide">👁️</button>
+                </div>
+
+                <div class="lock-input-group" style="margin-top: 10px;">
+                    <input type="password" id="change-pass-confirm" placeholder="Confirm New Password" />
+                </div>
+
+                <div class="lock-error-msg" id="change-pass-error-msg"></div>
+
+                <div style="display: flex; gap: 10px; margin-top: 18px;">
+                    <button class="lock-action-btn" id="btn-cp-cancel" style="background: #2c2c2e; color: #a1a1a6; margin-top: 0;">Cancel</button>
+                    <button class="lock-action-btn" id="btn-cp-submit" style="margin-top: 0;">Update Password</button>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(overlay);
+
+        var currInput = document.getElementById('change-pass-current');
+        var newInput = document.getElementById('change-pass-new');
+        var confirmInput = document.getElementById('change-pass-confirm');
+        var errorMsg = document.getElementById('change-pass-error-msg');
+        var submitBtn = document.getElementById('btn-cp-submit');
+        var cancelBtn = document.getElementById('btn-cp-cancel');
+        var cardBox = document.getElementById('change-pass-card-box');
+        var toggleCurr = document.getElementById('btn-toggle-cp-curr');
+        var toggleNew = document.getElementById('btn-toggle-cp-new');
+
+        if (toggleCurr && currInput) {
+            toggleCurr.onclick = function() {
+                currInput.type = currInput.type === 'password' ? 'text' : 'password';
+            };
+        }
+        if (toggleNew && newInput && confirmInput) {
+            toggleNew.onclick = function() {
+                var isPass = newInput.type === 'password';
+                newInput.type = isPass ? 'text' : 'password';
+                confirmInput.type = isPass ? 'text' : 'password';
+            };
+        }
+
+        function showErr(msg) {
+            if (errorMsg) errorMsg.textContent = msg;
+            if (cardBox) {
+                cardBox.classList.remove('shake');
+                void cardBox.offsetWidth;
+                cardBox.classList.add('shake');
+            }
+            if (submitBtn) submitBtn.textContent = 'Update Password';
+        }
+
+        if (cancelBtn) {
+            cancelBtn.onclick = function() {
+                overlay.remove();
+            };
+        }
+
+        async function handleChangeSubmit() {
+            var currVal = currInput ? currInput.value : '';
+            var newVal = newInput ? newInput.value : '';
+            var confVal = confirmInput ? confirmInput.value : '';
+
+            if (!currVal) {
+                showErr('Please enter your previous password.');
+                return;
+            }
+
+            try {
+                var authRaw = localStorage.getItem('notybook_sec_auth');
+                var decrypted = await NotyCrypto.decrypt(authRaw, currVal);
+                if (decrypted !== "NOTYBOOK_VERIFIED") {
+                    showErr('❌ Previous password is incorrect.');
+                    return;
+                }
+            } catch(e) {
+                showErr('❌ Previous password is incorrect.');
+                return;
+            }
+
+            if (!newVal || newVal.length < 3) {
+                showErr('New password must be at least 3 characters.');
+                return;
+            }
+
+            if (newVal !== confVal) {
+                showErr('❌ New passwords do not match.');
+                return;
+            }
+
+            submitBtn.textContent = 'Updating...';
+
+            try {
+                var newVerifier = await NotyCrypto.encrypt("NOTYBOOK_VERIFIED", newVal);
+                localStorage.setItem('notybook_sec_auth', newVerifier);
+
+                sessionPassword = newVal;
+
+                await saveStoredNotesAsync(state.notes);
+                await saveStoredFoldersAsync(state.folders);
+
+                overlay.remove();
+                showToast('🔑 Password Changed & Data Encrypted Successfully!');
+            } catch(err) {
+                showErr('Failed to update encryption key.');
+            }
+        }
+
+        if (submitBtn) submitBtn.onclick = handleChangeSubmit;
+
+        var inputs = [currInput, newInput, confirmInput];
+        inputs.forEach(function(inp) {
+            if (inp) {
+                inp.onkeydown = function(e) {
+                    if (e.key === 'Enter') handleChangeSubmit();
+                    if (e.key === 'Escape') overlay.remove();
+                };
+            }
+        });
+
+        setTimeout(function() { if (currInput) currInput.focus(); }, 150);
     }
 
     function showToast(msg) {
@@ -1761,6 +2014,7 @@
             }
             .inote-fmt-btn.icon-only { padding: 6px 9px; font-size: 16px; }
             .inote-fmt-btn:hover { background: #383840; color: #ffffff; border-color: #e5c07b; }
+            .inote-fmt-btn.active { background: #e5c07b !important; color: #1c1c1e !important; border-color: #e5c07b !important; font-weight: 800 !important; }
 
             /* Context Menu Dropdown */
             .inote-menu-wrapper { position: relative; display: inline-block; }
@@ -1902,21 +2156,31 @@
                 }
                 .mobile-nav-btn:active { background: rgba(229,192,123,0.15); }
 
-                /* Mobile Toolbar 2-Lines & Icons-Only Layout */
+                /* Mobile Toolbar Clean Single-Line & No-Overflow Layout */
                 .inote-toolbar {
-                    padding: 8px 12px; height: auto !important; min-height: 52px; overflow-x: visible; flex-wrap: wrap !important;
-                    gap: 6px; align-items: center; justify-content: space-between;
+                    padding: 6px 12px; height: 52px !important; min-height: 52px; overflow: visible; flex-wrap: nowrap !important;
+                    gap: 6px; align-items: center; justify-content: space-between; box-sizing: border-box; width: 100%;
                 }
-                .inote-toolbar-left { flex-wrap: wrap; gap: 6px; }
+                .inote-toolbar-left { flex-wrap: nowrap; gap: 6px; align-items: center; max-width: calc(100vw - 70px); overflow: visible; }
                 .inote-toolbar .btn-text { display: none !important; }
                 .inote-tool-btn {
-                    padding: 6px 10px; min-width: 36px; height: 36px; font-size: 16px; gap: 0;
-                    background: rgba(255,255,255,0.06); border-radius: 8px;
+                    padding: 6px 8px; min-width: 34px; height: 34px; font-size: 16px; gap: 0;
+                    background: rgba(255,255,255,0.06); border-radius: 8px; flex-shrink: 0;
+                }
+                #btn-backup-data, #btn-restore-data, #btn-change-password, #btn-lock-app {
+                    display: none !important;
                 }
                 .inote-dropdown-menu {
-                    right: 0 !important; left: auto !important;
-                    max-width: calc(100vw - 24px) !important;
-                    max-height: 80vh !important; overflow-y: auto !important;
+                    position: absolute !important;
+                    top: 40px !important;
+                    right: 0 !important;
+                    left: auto !important;
+                    min-width: 200px;
+                    max-width: calc(100vw - 20px) !important;
+                    max-height: 75vh !important;
+                    overflow-y: auto !important;
+                    z-index: 10000;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
                 }
                 .inote-format-bar {
                     padding: 6px 12px; height: auto !important; min-height: 44px; overflow-x: auto; flex-wrap: wrap; gap: 6px;

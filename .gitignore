@@ -1,0 +1,8 @@
+# Notybook Git Ignore Rules
+
+# Temporary & Local Progress Tracking
+progress.md
+
+# OS / System Files
+.DS_Store
+Thumbs.db
